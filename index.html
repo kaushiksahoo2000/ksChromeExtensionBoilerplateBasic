@@ -1,47 +1,18 @@
 <!DOCTYPE html>
-<html lang='en' ng-app='helpdeskAdmin'>
+<html>
+
 <head>
+
   <meta charset='UTF-8'>
-  <title>MakerSquare LA Help Desk</title>
+  <title>Boilerplate for Basic Chrome Extension</title>
 
-  <link rel='stylesheet' href='bower_components/Ionicons/css/ionicons.min.css'/>
-  <link rel='stylesheet' href='cerulean.css'/ />
   <link rel='stylesheet' href='styles.css'/>
-  <script type='text/javascript' src='bower_components/angular/angular.js'></script>
-  <script type='text/javascript' src='bower_components/angular-ui-router/release/angular-ui-router.js'></script>
-  <script type='text/javascript' src='node_modules/firebase/lib/firebase-web.js'></script>
-  <script type='text/javascript' src='node_modules/angularfire/dist/angularfire.js'></script>
   <script type='text/javascript' src='js/app.js'></script>
-  <script type='text/javascript' src='js/controllers.js'></script>
-
 
 </head>
-<body class="body-wrapper" ng-controller="IndexCtrl">
-  <form class="form-horizontal">
-    <fieldset>
-      <h4 class="text-center"><img src="icons/icon19.png" alt="MKS"/>Help Desk Admin</h4>
-        <div class="col-lg-10 col-lg-offset-1">
-          <textarea class="form-control" rows="3" id="question" placeholder="announcement" ng-model="announcement"></textarea>
-        </div>
-      </div>
-      <div class="form-group text-center">
-        <div class="col-lg-10 col-lg-offset-1">
-          <button type="reset" class="btn btn-default">Clear</button>
-          <button type="submit" class="btn btn-primary" ng-click="saveAnnouncement()">Submit</button>
-        </div>
-    </fieldset>
-  </form>
 
-  <h5 class="text-center">Live Announcements:</h5>
-   <div class="col-lg-10">
-     <div class="list-group col-lg-10">
-       <div class="list-group-item" ng-repeat="announcement in announcementsArr">
-         {{ announcement.announcements }}
-         <div class="pull-right">
-           <i class="icon ion-close" ng-click="removeAnnouncement($index)"></i>
-         </div>
-       </div>
-     </div>
-   </div>
+<body>
+  Boilerplate for Basic Chrome Extension
 </body>
+
 </html>

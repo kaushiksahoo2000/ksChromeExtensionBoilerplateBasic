@@ -1,10 +1,9 @@
 {
-  "name": "MakerSquare LA Admin Chrome Extension",
+  "name": "ksChromeExtensionBoilerplateBasic",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "Chrome Extension for MakerSquare LA Staff",
-  "homepage_url": "http://makersquare.com",
-  "content_security_policy": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com; object-src 'self'",
+  "description": "Boilerplate for Basic Chrome Extension",
+  "homepage_url": "http://google.com",
   "icons": {},
   "permissions":["storage"],
   "default_locale": "en",
@@ -15,7 +14,6 @@
     "persistent": true
   },
   "browser_action": {
-    /*"default_icon": "icons/icon19.png",*/
     "default_popup": "index.html"
   },
   "content_scripts": [
